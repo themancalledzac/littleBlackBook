@@ -13,72 +13,33 @@ import DropdownMenu from "@/Components/DropdownMenu";
  * @constructor
  */
 
+
 export default function User() {
+  // const [moduleList, setModuleList] = useState( ["module1", "module2", "module3"] )
+  const [dropdownMenuOpen, setDropdownMenuOpen] = useState( false );
   return (
     <div className="main">
       <div className={styles.header}>
-        <div className="headerTitle">
-          <h1>Header Title</h1>
-        </div>
-        <div className="headerMenu">
-          menu
-        </div>
-      </div>
-      <div className="body">
-        <div className="bodyHeaderWrapper">
-          <div className="profilePic">
-            <p>this will be an img</p>
-          </div>
-        </div>
-        <div className="bodyModuleWrapper">
-          {contacts.map((contact) => (
-            <Card
-              key={contact.id}
-              name={contact.name}
-              img={contact.imgURL}
-              tel={contact.phone}
-              email={contact.email}
-            />
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-    const [moduleList, setModuleList] = useState( ["module1", "module2", "module3"] )
-    const [dropdownMenuOpen, setDropdownMenuOpen] = useState( false );
-    return (
-        <div className="main">
-            <Header
+        <Header
                 dropdownMenuOpen={dropdownMenuOpen} // pass header dropdown boolean value as param
                 setDropdownMenuOpen={setDropdownMenuOpen} // pass header dropdown function as param
             />
-            <div className="body">
+      </div>
+      <div className="body">
                 <div className="bodyHeaderWrapper">
                     <div className="profilePic">
                         <p>this will be an img</p>
                     </div>
                 </div>
                 <div className="bodyModuleWrapper">
-                    {moduleList.map( ( module ) => (
-                        <div key={module}>
-                            {module}
-                        </div>
-                    ) )}
+                    {contacts.map(Card) 
+                    }
                 </div>
             </div>
             {dropdownMenuOpen && (
                 <DropdownMenu/>
             )}
         </div>
-    );
-}
+  );
+            }
 
-
-const contact = [
-    {name: 'beyonce', img: 'something', phone: 'illegal'},
-    {name: 'beyonce', img: 'something', phone: 'illegal'},
-    {name: 'beyonce', img: 'something', phone: 'illegal'},
-];
-
-
-Card( contact );
