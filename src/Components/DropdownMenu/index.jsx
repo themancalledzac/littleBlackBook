@@ -1,11 +1,11 @@
 'use client'
-import styles from "@/Components/Header/Header.module.scss";
+import styles from "./dropdownMenu.module.scss";
 import React from "react";
 
-export default function DropdownMenu() {
+export default function DropdownMenu( { dropdownMenuOpen, setDropdownMenuOpen } ) {
 
     return (
-        <div className={styles.menuDropdownWrapper} onClick={() => setMenuOpen( false )}>
+        <div className={styles.menuDropdownWrapper} onClick={() => setDropdownMenuOpen( false )}>
 
             <div className={styles.menuDropdown}>
                 <ul className={styles.menuButtons}>
