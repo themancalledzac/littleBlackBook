@@ -27,6 +27,7 @@ export default function User() {
                 <div className={styles.profileWrapper}>
                     <div className={styles.userProfile}>
                         <h1>{user.name}</h1>
+                        <h3>{user.phone_number}</h3>
                         <p>this will be an img</p>
                     </div>
                 </div>
