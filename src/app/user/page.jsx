@@ -1,11 +1,12 @@
 'use client'
 import { useState } from "react";
-import Contacts from "../../Components/Contacts";
-import contacts from "../contacts";
+import user from "../../Utils/user.json";
 import styles from './user.module.scss';
 import Header from "@/Components/Header";
 import DropdownMenu from "@/Components/DropdownMenu";
-import ContactCard from "@/Components/ContactCard";
+import Module from "@/Components/Module";
+import fetchData from "../../Utils/fetchData.json";
+
 
 /**
  * Default Page for Logged in User.
@@ -16,6 +17,7 @@ import ContactCard from "@/Components/ContactCard";
 export default function User() {
     // const [moduleList, setModuleList] = useState( ["module1", "module2", "module3"] )
     const [dropdownMenuOpen, setDropdownMenuOpen] = useState( false );
+    const [userModules, setUserModules] = useState( fetchData );
     return (
         <div className={styles.main}>
             <Header
@@ -24,23 +26,17 @@ export default function User() {
             />
             <div className={styles.bodyWrapper}>
                 <div className={styles.profileWrapper}>
-                    <div className="profilePic">
+                    <div className={styles.userProfile}>
+                        <h1>{user.name}</h1>
+                        <h3>{user.phone_number}</h3>
                         <p>this will be an img</p>
                     </div>
                 </div>
-                <div className={styles.bodyMain}>
-                    // TODO: Update a List(mapped) of contacts, instead do a ContactCard, and insi
-                    {contacts.map( ( contact ) => (
-                        <Contacts
-                            key={contact.phone}
-                            email={contact.email}
-                            imgURL={contact.imgURL}
-                            name={contact.name}
-                            phone={contact.phone}
-                        />
-                    ) )
-                    }
-                </div>
+                {userModules && (
+                    userModules.map( ( module ) => (
+                        <Module module={module}/>
+                    ) ) )
+                }
             </div>
             {dropdownMenuOpen && (
                 <DropdownMenu

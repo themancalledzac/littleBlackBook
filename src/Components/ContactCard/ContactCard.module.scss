@@ -1,4 +1,7 @@
-.contactBody {
+.contactCardBody {
   width: 400px;
-  height: 600px;
+  border: 2px solid black;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
 }
