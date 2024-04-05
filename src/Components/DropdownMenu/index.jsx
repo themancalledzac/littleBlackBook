@@ -2,10 +2,10 @@
 import styles from "./dropdownMenu.module.scss";
 import React from "react";
 
-export default function DropdownMenu( { dropdownMenuOpen, setDropdownMenuOpen } ) {
+export default function DropdownMenu( params ) {
 
     return (
-        <div className={styles.menuDropdownWrapper} onClick={() => setDropdownMenuOpen( false )}>
+        <div className={styles.menuDropdownWrapper} onClick={() => params.setDropdownMenuOpen( false )}>
 
             <div className={styles.menuDropdown}>
                 <ul className={styles.menuButtons}>

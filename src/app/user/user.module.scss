@@ -7,10 +7,19 @@
 
 .bodyWrapper {
   width: 90%;
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .profileWrapper {
+  flex-basis: 100%;
+}
 
+.userProfile {
+  border: 2px solid black;
 }
 
 .bodyMain {
