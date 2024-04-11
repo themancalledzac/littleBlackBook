@@ -18,7 +18,7 @@ export default function User() {
     // const [moduleList, setModuleList] = useState( ["module1", "module2", "module3"] )
     const [dropdownMenuOpen, setDropdownMenuOpen] = useState( false );
     const [userModules, setUserModules] = useState( fetchData );
-    console.log(userModules);
+
     return (
         <div className={styles.main}>
             <Header

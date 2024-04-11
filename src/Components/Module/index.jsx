@@ -13,7 +13,6 @@ export default function Module( { module } ) {
                 <ContactCard contacts={module.data}/>
             )}
             {module.module_type === "list" && (
-                // why is it module={modle} ?
                 <List module={module}/>
             )}
 
