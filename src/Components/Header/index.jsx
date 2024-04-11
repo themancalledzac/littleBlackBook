@@ -18,7 +18,7 @@ export default function Header( { dropdownMenuOpen, setDropdownMenuOpen } ) {
 
     return (
         <div className={styles.headerMain}>
-            <h1 className={styles.headerTitle}>Little <span style={{ color: 'black' }}> Black < /span> Book</h1>
+            <h1 className={styles.headerTitle}>Little <span style={{ color: 'black' }}> Black </span> Book</h1>
             <h3 className={styles.item} onClick={handleClick}>Menu</h3>
         </div>
     )
