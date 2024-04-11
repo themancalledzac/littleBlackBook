@@ -1,7 +1,7 @@
 'use client'
 
 import styles from './ContactCard.module.scss';
-import Contacts from "@/Components/Contacts";
+import Contacts from "@/Components/Contacts/Contacts";
 
 export default function ContactCard( { contacts } ) {
     return (

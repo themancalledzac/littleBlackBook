@@ -1,8 +1,8 @@
 'use client'
 
 import styles from './Module.module.scss';
-import ContactCard from "@/Components/ContactCard";
-import List from "@/Components/List";
+import ContactCard from "@/Components/ContactCard/ContactCard";
+import List from "@/Components/List/List";
 
 export default function Module( { module } ) {
     return (
