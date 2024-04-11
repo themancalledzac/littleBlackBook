@@ -7,7 +7,6 @@ import DropdownMenu from "@/Components/DropdownMenu/DropdownMenu";
 import Module from "@/Components/Module/Module";
 import fetchData from "../../Utils/fetchData.json";
 
-
 /**
  * Default Page for Logged in User.
  *
