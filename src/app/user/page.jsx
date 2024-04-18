@@ -3,7 +3,7 @@ import { useState } from "react";
 import user from "../../Utils/user.json";
 import styles from './user.module.scss';
 import Header from "@/Components/Header";
-import DropdownMenu from "@/Components/DropdownMenu";
+import DropdownMenu from "@/Components/DropdownMenu/DropdownMenu";
 import Module from "@/Components/Module";
 import fetchData from "../../Utils/fetchData.json";
 
