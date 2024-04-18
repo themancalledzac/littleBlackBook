@@ -1,6 +1,14 @@
 .moduleWrapper {
-  padding: 5px;
+  //padding: 5px;
   border: 2px solid black;
-  margin: 2rem;
+  //margin: 2rem;
   background-color: #e1f0f4;
+  width: 45%;
+  margin: 1rem;
+}
+
+.moduleTitle {
+  padding: 0.5rem;
+  justify-content: center;
+  text-align: center;
 }

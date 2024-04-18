@@ -1,13 +1,13 @@
 'use client'
 
 import styles from './ContactCard.module.scss';
-import Contacts from "@/Components/Contacts";
+import Contact from "@/Components/Contact/Contact";
 
 export default function ContactCard( { contacts } ) {
     return (
         <div className={styles.contactCardBody}>
             {contacts.map( ( contact ) => (
-                <Contacts
+                <Contact
                     key={contact.phone}
                     email={contact.email}
                     imgURL={contact.imgURL}

@@ -1,8 +1,8 @@
 'use client'
 
 import styles from './List.module.scss';
-import ListSimple from "@/Components/ListSimple";
-import ListComplicated from '../ListComplicated/listComplicated';
+import ListSimple from "@/Components/ListSimple/ListSimple";
+import ListComplicated from '../ListComplicated/ListComplicated';
 
 
 export default function List( { module } ) {

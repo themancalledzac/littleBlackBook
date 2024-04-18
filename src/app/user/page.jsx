@@ -2,9 +2,9 @@
 import { useState } from "react";
 import user from "../../Utils/user.json";
 import styles from './user.module.scss';
-import Header from "@/Components/Header";
+import Header from "@/Components/Header/Header";
 import DropdownMenu from "@/Components/DropdownMenu/DropdownMenu";
-import Module from "@/Components/Module";
+import Module from "@/Components/Module/Module";
 import fetchData from "../../Utils/fetchData.json";
 
 
@@ -26,18 +26,13 @@ export default function User() {
                 setDropdownMenuOpen={setDropdownMenuOpen} // pass header dropdown function as param
             />
             <div className={styles.bodyWrapper}>
-                <div className={styles.profileWrapper}>
-                    <div className={styles.userProfile}>
-                        <h1>{user.name}</h1>
-                        <h3>{user.phone_number}</h3>
-                        <p>this will be an img</p>
-                    </div>
+                <div className={styles.moduleWrapper}>
+                    {userModules && (
+                        userModules.map( ( module ) => (
+                            <Module module={module}/>
+                        ) ) )
+                    }
                 </div>
-                {userModules && (
-                    userModules.map( ( module ) => (
-                        <Module module={module}/>
-                    ) ) )
-                }
             </div>
             {dropdownMenuOpen && (
                 <DropdownMenu
