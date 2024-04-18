@@ -6,8 +6,14 @@
 }
 
 .bodyWrapper {
-  width: 90%;
-  max-width: 800px;
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.moduleWrapper {
   margin-right: auto;
   margin-left: auto;
   display: flex;
@@ -20,6 +26,7 @@
 
 .userProfile {
   border: 2px solid black;
+  width: 50%;
 }
 
 .bodyMain {
