@@ -2,7 +2,6 @@
 import { useState } from "react";
 
 export default function ListSimpleItem({ groceryItem }) {
-    console.log(groceryItem);
     const [isStrikethrough, setIsStriketrough] = useState(false);
 
     const toggleStrikethrough = () => {
