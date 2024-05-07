@@ -10,6 +10,10 @@ export default function ListSimpleItem({ groceryItem }) {
 
     return (
 
-        <li key={groceryItem} onClick={toggleStrikethrough} style={{ textDecoration: isStrikethrough ? 'line-through' : 'none' }}>{groceryItem}</li>
-            )
+        <li
+            key={groceryItem}
+            onClick={toggleStrikethrough}
+            style={{ textDecoration: isStrikethrough ? 'line-through' : 'none' }}>{groceryItem}
+        </li>
+    )
 }
