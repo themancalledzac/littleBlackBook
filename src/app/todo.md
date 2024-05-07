@@ -39,3 +39,6 @@
         - Calendar - When small, would be a List of Upcoming calendar events. Big might have more data on each
             - This would be really would, but would require us to hook into Google Calendar, OR literally make our own.
             - MVP would be to use the Google Calendar API.
+
+        - Create  strikethrough on the grocerylist using state 
+            - created the strikethrough but it is happening for every item in the list not just the item i clicked on... 
