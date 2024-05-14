@@ -1,5 +1,5 @@
 'use client'
-import ListSimpleItem from "../ListSimpleItem/ListSimpleItem";
+import GroceryListItem from "../ListSimpleItem/GroceryListItem";
 
 // import styles from './List.module.scss';
 
@@ -8,7 +8,7 @@ export default function ListSimple({ list }) {
     return (
         <ul>
             {list.map((groceryItem) => (
-            <ListSimpleItem groceryItem={groceryItem} />
+            <GroceryListItem groceryItem={groceryItem} />
             ))}
         </ul>
     )

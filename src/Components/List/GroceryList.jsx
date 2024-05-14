@@ -2,15 +2,15 @@
 
 import styles from './List.module.scss';
 import ListSimple from "@/Components/ListSimple/ListSimple";
-import ListComplicated from '../ListComplicated/ListComplicated';
+import complexListItem from '../ListComplicated/ComplexListItem';
 
 
-export default function List( { module } ) {
+export default function GroceryList( { module } ) {
 
     return (
         <div className={styles.listCardBody}>
             {module.list_type === "todo" &&
-                <ListComplicated data={module.data}/>
+                <complexListItem data={module.data}/>
             }
             {module.list_type === "grocery" &&
                 <ListSimple list={module.data}/>
