@@ -1,22 +1,22 @@
 [
   {
     "title": "contacts",
-    "module_type": "contacts",
+    "module_type": "contact",
     "data": [
       {
-        "name": "Beyonce",
+        "title": "Beyonce",
         "imgURL": "https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg",
         "phone": "+123 456 789",
         "email": "b@beyonce.com"
       },
       {
-        "name": "Jack Bauer",
+        "title": "Jack Bauer",
         "imgURL": "https://pbs.twimg.com/profile_images/625247595825246208/X3XLea04_400x400.jpg",
         "phone": "+987 654 321",
         "email": "jack@nowhere.com"
       },
       {
-        "name": "Chuck Norris",
+        "title": "Chuck Norris",
         "imgURL": "https://i.pinimg.com/originals/e3/94/47/e39447de921955826b1e498ccf9a39af.png",
         "phone": "+918 372 574",
         "email": "gmail@chucknorris.com"
@@ -25,28 +25,78 @@
   },
   {
     "title": "groceryList",
-    "module_type": "list",
-    "list_type": "grocery",
+    "module_type": "grocery",
     "data": [
-      "Broccoli",
-      "Celery",
-      "Cereal"
+      {
+        "title": "Broccoli"
+      },
+      {
+        "title": "Celery"
+      },
+      {
+        "title": "Cereal"
+      }
     ]
   },
   {
     "title": "todoList",
-    "module_type": "list",
-    "list_type": "todo",
+    "module_type": "todo",
     "data": [
       {
-        "name": "homework",
-        "done": false,
+        "title": "homework",
         "dateDue": "Monday"
       },
       {
-        "name": "work",
-        "done": true,
+        "title": "work",
         "dateDue": "Yesterday"
+      }
+    ]
+  },
+  {
+    "title": "recipeList",
+    "module_type": "recipe",
+    "data": [
+      {
+        "title": "How to Make Pancakes",
+        "instructions": [
+          "Sift flour, baking powder, sugar, and salt together in a large bowl. Make a well in the center and add milk, melted butter, and egg; mix until smooth.",
+          "Heat a lightly oiled griddle or pan over medium-high heat. Pour or scoop the batter onto the griddle, using approximately 1/4 cup for each pancake; cook until bubbles form and the edges are dry, about 2 to 3 minutes.",
+          "Flip and cook until browned on the other side. Repeat with remaining batter."
+        ],
+        "ingredients": [
+          {
+            "title": "all-purpose flour",
+            "amount": "1 ½ cups"
+          },
+          {
+            "title": "baking powder",
+            "amount": "3 ½ teaspoons"
+          },
+          {
+            "title": "white sugar",
+            "amount": "1 tablespoon"
+          },
+          {
+            "title": "salt",
+            "amount": "¼ teaspoon, or more to taste"
+          },
+          {
+            "title": "milk",
+            "amount": "1 ¼ cups"
+          },
+          {
+            "title": "butter, melted",
+            "amount": "3 tablespoons"
+          },
+          {
+            "title": "egg",
+            "amount": "1"
+          }
+        ],
+        "Cook Time": "6 minutes",
+        "Prep Time": "10 minutes",
+        "Total Time": "16 minutes",
+        "Number of Servings": 4
       }
     ]
   }

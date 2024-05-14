@@ -40,5 +40,25 @@
             - This would be really would, but would require us to hook into Google Calendar, OR literally make our own.
             - MVP would be to use the Google Calendar API.
 
-        - Create  strikethrough on the grocerylist using state 
-            - created the strikethrough but it is happening for every item in the list not just the item i clicked on... 
+        - Create strikethrough on the groceryList using state
+            - created the strikethrough, but it is happening for every item in the list not just the item i clicked
+              on...
+
+New Module Idea:
+
+- Cookbook
+- List of Recipes
+- On Click of Recipe, Open Recipe
+    - Recipe open should show 2 items, ingredients, step by step instructions - each can be nullable
+- You should be able to add ingredients FROM a recipe to the shopping List
+- https://rapidapi.com/apidojo/api/tasty/pricing - as an API possibility
+- Need 'Add Recipe'
+    - API endpoint - /CreateRecipe
+    - API Endpoint - /CreateIngredient
+
+New idea:
+
+- https://www.framer.com/motion/
+- use this shit
+- drag and drop from one module to another?
+- 
