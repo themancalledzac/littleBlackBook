@@ -2,11 +2,11 @@
 
 // import styles from './List.module.scss';
 
-export default function ComplexListItem( { moduleItem, moduleType } ) {
+export default function RecipeListItem( { title } ) {
     return (
         <div>
-            <div key={moduleItem.title}>
-                <h3>{moduleItem.title}</h3>
+            <div key={title}>
+                <h3>{title}</h3>
                 {/*<h3>{item.dateDue}</h3>*/}
 
             </div>
