@@ -1,10 +1,10 @@
 'use client'
 
 import styles from './Module.module.scss';
-import ModuleItem from "@/Components/ModuleItem/ModuleItem";
 import Contact from "@/Components/Contact/Contact";
 import GroceryListItem from "@/Components/ListSimpleItem/GroceryListItem";
-import ComplexListItem from "@/Components/ListComplicated/ComplexListItem";
+import ToDoListItem from "@/Components/ToDoListItem/ToDoListItem";
+import RecipeListItem from "@/Components/RecipeListItem/RecipeListItem";
 
 export default function Module( { module } ) {
 
@@ -20,14 +20,11 @@ export default function Module( { module } ) {
                     <>
                         {module.module_type === "contact" && <Contact moduleItem={moduleItem}/>}
                         {module.module_type === 'grocery' && <GroceryListItem title={moduleItem.title}/>}
-                        {/*TODO: update todo from ComplextListItem to ToDoListItem(new Component)*/}
-                        {module.module_type === 'todo' && <ComplexListItem moduleItem={moduleItem}/>}
-                        {/*TODO: update todo from ComplextListItem to recipeListItem(new Component)*/}
-                        {module.module_type === 'recipe' && <ComplexListItem moduleItem={moduleItem}/>}
+                        {module.module_type === 'todo' && <ToDoListItem title={moduleItem.title} dateDue={moduleItem.dateDue}/>}
+                        {module.module_type === 'recipe' && <RecipeListItem title={moduleItem.title}/>}
                     </>
                 ) )}
             </div>
         </div>
     );
 }
-
