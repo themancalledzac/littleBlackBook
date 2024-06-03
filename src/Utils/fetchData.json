@@ -1,6 +1,6 @@
 [
   {
-    "title": "contacts",
+    "title": "Contacts",
     "module_type": "contact",
     "data": [
       {
@@ -24,7 +24,7 @@
     ]
   },
   {
-    "title": "groceryList",
+    "title": "Grocery List",
     "module_type": "grocery",
     "data": [
       {
@@ -39,21 +39,21 @@
     ]
   },
   {
-    "title": "todoList",
+    "title": "Todo List",
     "module_type": "todo",
     "data": [
       {
-        "title": "homework",
+        "title": "Homework",
         "dateDue": "Monday"
       },
       {
-        "title": "work",
+        "title": "Work",
         "dateDue": "Yesterday"
       }
     ]
   },
   {
-    "title": "recipeList",
+    "title": "Recipe List",
     "module_type": "recipe",
     "data": [
       {

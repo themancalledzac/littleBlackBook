@@ -13,8 +13,8 @@ export default function ToDoListItem( { title, dateDue } ) {
     return (
         <div>
             <div key={title}>
-                <h3>{title}</h3>
-                <h3>{dateDue}</h3>
+                <h1>{title}</h1>
+                <h2>Due Date: {dateDue}</h2>
 
             </div>
         </div>

@@ -21,7 +21,7 @@ export default function Module( { module } ) {
                         {module.module_type === "contact" && <Contact moduleItem={moduleItem}/>}
                         {module.module_type === 'grocery' && <GroceryListItem title={moduleItem.title}/>}
                         {module.module_type === 'todo' && <ToDoListItem title={moduleItem.title} dateDue={moduleItem.dateDue}/>}
-                        {module.module_type === 'recipe' && <RecipeListItem title={moduleItem.title}/>}
+                        {module.module_type === 'recipe' && <RecipeListItem title={moduleItem.title} instructions={moduleItem.instructions} ingredients={moduleItem.ingredients}/>}
                     </>
                 ) )}
             </div>
