@@ -6,6 +6,10 @@ import Header from "@/Components/Header/Header";
 import DropdownMenu from "@/Components/DropdownMenu/DropdownMenu";
 import Module from "@/Components/Module/Module";
 import fetchData from "../../Utils/fetchData.json";
+import ContactModule from "@/Components/ContactModule/ContactModule";
+import GroceryListModule from "@/Components/GroceryListModule/GroceryListModule";
+import TodoListModule from "@/Components/TodoListModule/TodoListModule";
+import RecipeListModule from "@/Components/RecipeListModule/RecipeListModule";
 
 
 /**
@@ -29,7 +33,22 @@ export default function User() {
                 <div className={styles.moduleWrapper}>
                     {userModules && (
                         userModules.map( ( module ) => (
-                            <Module module={module}/>
+                            <>
+                                {module.module_type === 'contact' &&
+                                    <ContactModule module={module}/>
+                                }
+                                {module.module_type === 'grocery' &&
+                                    <GroceryListModule module={module}/>
+                                }
+                                {module.module_type === 'todo' &&
+                                    <TodoListModule module={module}/>
+                                }
+                                {module.module_type === 'recipe' &&
+                                    <RecipeListModule module={module}/>
+                                }
+                            </>
+                            // TODO: If contact, make contactModule
+                            // <Module module={module}/>
                         ) ) )
                     }
                 </div>

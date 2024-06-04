@@ -32,7 +32,7 @@
     - Could be any number of unique Modules
     - We release different module 'Options', such as the following:
         - List (General) - Contains a List of Strings ( simple, easy, MVP )
-        - Contact List - Contains a List of User objects, with any number of fields possible. This implies that we could
+        - ContactItem List - Contains a List of User objects, with any number of fields possible. This implies that we could
           have a contact image, name, email, phone number(s), handle/link for Instagram/Twitter/YouTube/etc.
         - To Do List - Contains a List of ToDo Objects, with a Title, Description, Due Date, Boolean of 'Done'
         - Picture Gallery - Contains a list of 'HeadImage' objects.

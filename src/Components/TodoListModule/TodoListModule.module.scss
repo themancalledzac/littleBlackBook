@@ -1,0 +1,15 @@
+@import '../../styles/global.scss';
+
+.todoListModuleWrapper {
+  @extend .moduleWrapper;
+}
+
+.moduleTitle {
+  padding: 0.5rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.dataList {
+  // todo
+}
