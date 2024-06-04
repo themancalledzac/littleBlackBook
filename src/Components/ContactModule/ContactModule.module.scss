@@ -1,0 +1,19 @@
+@import '../../styles/global.scss';
+
+.contactModuleWrapper {
+  @extend .moduleWrapper;
+}
+
+.moduleHeader {
+  // TODO: make flex
+}
+
+.moduleTitle {
+  padding: 0.5rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.dataList {
+  // todo
+}
