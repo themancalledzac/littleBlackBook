@@ -1,8 +1,19 @@
 .contactBody {
   width: 100%;
   //height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+.nameContainer {
+        display: flex;
+        justify-content: space-between;
+    }
+.infoContainer {
+    display: flex;
+    justify-content: space-between;
+    }
 .bodyMain {
   width: 800px;
 

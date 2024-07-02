@@ -6,10 +6,13 @@
 
 .moduleHeader {
   // TODO: make flex
+  display: flex;
+  justify-content: space-between;
 }
 
 .moduleTitle {
   padding: 0.5rem;
+  margin: 0.5rem;
   justify-content: center;
   text-align: center;
 }
