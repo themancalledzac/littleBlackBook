@@ -3,6 +3,7 @@
 import styles from './ContactModule.module.scss';
 import ContactItem from "@/Components/ContactItem/ContactItem";
 import { useState } from "react";
+import { Plus } from "lucide-react";
 
 export default function ContactModule( { module } ) {
     const [currentChoice, setCurrentChoice] = useState( null );
@@ -12,7 +13,7 @@ export default function ContactModule( { module } ) {
         <div className={styles.contactModuleWrapper}>
             <div className={styles.moduleHeader}>
                 <h1 className={styles.moduleTitle}>{module.title}</h1>
-                <button>Add New</button>
+                <Plus className="my-plus-icon" />
             </div>
             {!currentChoice ?
                 <ul className={styles.dataList}>
