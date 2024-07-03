@@ -8,12 +8,17 @@ import { Plus } from "lucide-react";
 export default function ContactModule( { module } ) {
     const [currentChoice, setCurrentChoice] = useState( null );
     const selectedContact = module.data.find( contact => contact.id === currentChoice );
+    const [isPlusVisible, setIsPlusVisible] = useState(true);
+
+    const handleListClick = () => {
+        setIsPlusVisible(false);
+    };
 
     return (
         <div className={styles.contactModuleWrapper}>
             <div className={styles.moduleHeader}>
                 <h1 className={styles.moduleTitle}>{module.title}</h1>
-                <Plus className="my-plus-icon" />
+                <Plus className={styles.lucide} />
             </div>
             {!currentChoice ?
                 <ul className={styles.dataList}>
