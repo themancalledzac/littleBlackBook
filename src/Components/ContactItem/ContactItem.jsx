@@ -3,14 +3,14 @@
 import styles from './ContactItem.module.scss';
 import { X } from "lucide-react";
 
-export default function ContactItem( { moduleItem, setCurrentChoice } ) {
-    const { title, phone, imgURL, email } = moduleItem;
+export default function ContactItem( { moduleItem, setSelectedContact } ) {
+    const { title, phone, email } = moduleItem;
 
     return (
         <div className={styles.contactBody}>
             <div className={styles.nameContainer}>
-                <h2 className="name">{title}</h2>
-                <X onClick={() => setCurrentChoice( null )}/>
+                <h2 className={styles.name}>{title}</h2>
+                <X className={styles.lucide}onClick={() => setSelectedContact( null )}/>
             </div>
             <div className={styles.infoContainer}>
                 <div className={styles.bottomContainer}>

@@ -1,19 +1,26 @@
 .contactBody {
-  width: 100%;
+  width: 90%;
   //height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-left: 1rem;
 }
 
 .nameContainer {
         display: flex;
         justify-content: space-between;
     }
+
 .infoContainer {
     display: flex;
     justify-content: space-between;
     }
+
+.lucide {
+  cursor: pointer;
+}
+
 .bodyMain {
   width: 800px;
 
