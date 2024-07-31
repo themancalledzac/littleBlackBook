@@ -3,6 +3,7 @@
 import styles from './RecipeListModule.module.scss';
 import RecipeListItem from "@/Components/RecipeListItem/RecipeListItem";
 import { useState } from "react";
+import { Plus } from "lucide-react";
 
 export default function RecipeListModule( { module } ) {
     const [currentChoice, setCurrentChoice] = useState( null );
@@ -12,8 +13,10 @@ export default function RecipeListModule( { module } ) {
 
     return (
         <div className={styles.recipeModuleWrapper}>
+             <div className={styles.moduleHeader}>
             <h1 className={styles.moduleTitle}>{module.title}</h1>
-            <button>Add New</button>
+            <Plus className={styles.lucide} />
+            </div>
             <div className={styles.dataList}>
                 {module.data.map( ( moduleItem ) => (
                     <RecipeListItem title={moduleItem.title} instructions={moduleItem.instructions}
