@@ -1,5 +1,31 @@
 @import '../../styles/global.scss';
 
 .contactBody {
-    
+    width: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-left: 1rem;
+  }
+
+  .nameContainer {
+    display: flex;
+    justify-content: space-between;
 }
+
+.formContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.label {
+    padding-bottom: .5rem;
+}
+
+.input {
+    width: 100%;
+    padding: 5px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
